@@ -40,7 +40,7 @@ COMMON = \
 	screen.o scrollbar.o scrollbar-next.o scrollbar-rxvt.o \
 	scrollbar-xterm.o scrollbar-plain.o xdefaults.o encoding.o \
 	rxvttoolkit.o rxvtutil.o keyboard.o rxvtimg.o \
-	ev_cpp.o @PERL_O@
+	ev_cpp.o sixel.o @PERL_O@
 
 COMMON_DAEMON = rxvtdaemon.o
 
@@ -256,3 +256,5 @@ rxvtperl.o: rxvt.h feature.h ecb.h encoding.h rxvtutil.h estl.h emman.h
 rxvtperl.o: rxvtfont.h rxvttoolkit.h callback.h rxvtimg.h scrollbar.h
 rxvtperl.o: rxvtperl.h hookinc.h rsinc.h optinc.h keyboard.h perlxsi.c
 rxvtperl.o: iom_perl.h
+sixel.o: sixel.h
+sixel_hls.o: sixel_hls.h
